@@ -2,8 +2,9 @@ extra_css:
 - custom.css
 nav:
 - Home: index.md
-- Time-series forecasting: Time-series forecasting.md
-- Symbolic regression: Symbolic regression.md
+- ecDNA forecasting: ecDNA forecasting.md
+- Drug-Resistance forecasting: Drug-Resistance forecasting.md
+- Spatial-Heterogeneity forecasting: Spatial-Heterogeneity forecasting.md
 plugins:
 - mkdocstrings:
     paths:

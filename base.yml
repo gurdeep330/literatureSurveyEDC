@@ -1,4 +1,4 @@
-site_name: Literature Survey (VPE)
+site_name: Literature Survey for EDC
 plugins:
   - mkdocstrings:
       paths: ["app", "tests"]  
