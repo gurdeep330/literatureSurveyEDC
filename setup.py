@@ -16,7 +16,7 @@ setup(
     packages=['app'],
     author='Singh, Gurdeep',
     author_email='gsingh@bio.mx',
-    description='A template to develop a repo on literature survey',
+    description='Literature survey for team EDC',
     url='https://bio.mx/research-teams/artificial-intelligence/team-vpe/',
     license='MIT',
 )
