@@ -2,9 +2,8 @@ extra_css:
 - custom.css
 nav:
 - Home: index.md
-- ecDNA forecasting: ecDNA forecasting.md
-- Drug-Resistance forecasting: Drug-Resistance forecasting.md
-- Spatial-Heterogeneity forecasting: Spatial-Heterogeneity forecasting.md
+- Time-series forecasting: Time-series forecasting.md
+- TImmunology: TImmunology.md
 plugins:
 - mkdocstrings:
     paths:
