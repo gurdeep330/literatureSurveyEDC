@@ -22,10 +22,17 @@ def add_negative_articles(topic_obj, dic):
     if 'negative' not in topic_obj.paper_ids:
         topic_obj.paper_ids['negative'] = {}
     for topic in dic:
+        # Skip the current topic
         if topic == topic_obj.topic:
             continue
+        # Add the negative articles to the topic object
         for paper_id in dic[topic].paper_ids['positive']:
+            # Skip if the paper id is already in the negative articles
             if paper_id in topic_obj.paper_ids['negative']:
+                continue
+            # Skip if the paper id is already in the positive articles
+            # i.e. do not add the same paper id to both positive and negative articles
+            if paper_id in topic_obj.paper_ids['positive']:
                 continue
             topic_obj.paper_ids['negative'][paper_id]=dic[topic].paper_ids['positive'][paper_id]
     print (f'Added {len(topic_obj.paper_ids["negative"])} negative articles for {topic_obj.topic}.')
